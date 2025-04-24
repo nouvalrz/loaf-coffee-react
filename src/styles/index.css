@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-oat: #fff1d4;
+  --color-orange: #eb622e;
+  --color-mustard: #efa622;
+  --color-choco: #473a34;
+}
+
+@layer components {
+  .bg-orange-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(212, 97, 55, 0) 64%,
+      rgba(212, 97, 55, 0.37) 84%,
+      rgba(212, 97, 55, 0.8) 100%
+    );
+  }
+
+  .bg-choco-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(71, 58, 52, 0) 64%,
+      rgba(71, 58, 52, 0.37) 84%,
+      rgba(71, 58, 52, 0.8) 100%
+    );
+  }
+
+  .bg-orange-product-gradient {
+    background: linear-gradient(
+      to bottom,
+      #d46137 0%,
+      rgba(212, 97, 55, 0) 40%
+    );
+  }
+
+  .bg-mustard-to-orange {
+    background: linear-gradient(
+      to bottom,
+      #efa622 0%,
+      #efa622 50%,
+      #eb622e 50%,
+      #eb622e 100%
+    );
+  }
+
+  .bg-oat-to-mustard {
+    background: linear-gradient(
+      to bottom,
+      #fff1d4 0%,
+      #fff1d4 20%,
+      #efa622 20%,
+      #efa622 100%
+    );
+  }
+
+  .main-container {
+    width: 100%;
+
+    @media (width >= 96rem /* 1536px */) {
+      max-width: 108rem /* 1536px */;
+    }
+  }
+}
