@@ -70,3 +70,81 @@ export const galleryImages = [
   "./assets/images/gallery-2.png",
   "./assets/images/gallery-3.png",
 ]
+
+export const promoMenuItems = [
+  {
+    tag: "Ramadan Offer",
+    title: "10% Off Discount",
+    promoCode: "#IFTAAR_ON",
+    until: "31 March"
+  },
+  {
+    tag: "Seasonal Offer",
+    title: "BUY 2 FREE 1 CROISSANT",
+    promoCode: "#GO_FREE",
+    until: "5 April"
+  }
+]
+
+export const allMenuItems = [
+  {
+    name: "Butter\nLatte",
+    price: "28K",
+    imageSource: "./assets/images/butter-latte.png",
+    category: "beverage"
+  },
+  {
+    name: "Almond\nCroissant",
+    price: "24K",
+    imageSource: "./assets/images/almond-croissant.png",
+    category: "food"
+  },
+  {
+    name: "Arabica\nCoffee",
+    price: "22K",
+    imageSource: "./assets/images/arabica-coffee.png",
+    category: "beverage"
+  },
+  {
+    name: "Dark\nChoco Danish",
+    price: "28K",
+    imageSource: "./assets/images/dark-choco-danish.png",
+    category: "food"
+  },
+  {
+    name: "Caramel\nLatte",
+    price: "30K",
+    imageSource: "./assets/images/caramel-latte.png",
+    category: "beverage"
+  },
+  {
+    name: "Frappe\nCappuccino",
+    price: "30K",
+    imageSource: "./assets/images/frappe-cappuccino.png",
+    category: "beverage"
+  },
+  {
+    name: "Vanilla\nCroissant",
+    price: "30K",
+    imageSource: "./assets/images/vanilla-croissant.png",
+    category: "food"
+  },
+  {
+    name: "Mocha\nLatte",
+    price: "26K",
+    imageSource: "./assets/images/mocha-latte.png",
+    category: "beverage"
+  },
+  {
+    name: "Cheese\nCake",
+    price: "32K",
+    imageSource: "./assets/images/cheese-cake.png",
+    category: "food"
+  },
+  {
+    name: "Ice\nMatcha",
+    price: "28K",
+    imageSource: "./assets/images/ice-matcha.png",
+    category: "beverage"
+  }
+];

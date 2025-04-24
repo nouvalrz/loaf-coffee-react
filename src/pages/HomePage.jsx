@@ -1,7 +1,7 @@
 import KeySellingSection from "@/components/KeySellingSection";
 import HomeJumbotron from "../components/HomeJumbotron";
 import LogoBadge from "../components/LogoBadge";
-import Navigation from "../components/HomeNavigation";
+import HomeNavigation from "../components/HomeNavigation";
 import PromoBannerPortrait from "../components/PromoBannerPortrait";
 import PromoSectionMobile from "../components/PromoSectionMobile";
 import TopSellingSection from "@/components/TopSellingSection";
@@ -24,7 +24,7 @@ function HomePage() {
             />
           </div>
           <div className="flex flex-col gap-4 grow-[1]">
-            <Navigation />
+            <HomeNavigation />
             <HomeJumbotron
               imageSource="./assets/images/jumbotron-product.webp"
               titleComponent={

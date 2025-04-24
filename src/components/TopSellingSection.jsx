@@ -25,7 +25,7 @@ function TopSellingSection() {
             </p>
             <div className="flex flex-row gap-5 mt-6 overflow-x-auto justify-evenly">
               {topSellingProducts.map((item, index) => (
-                <MenuItem {...item} key={index} />
+                <MenuItem {...item} key={index} className=" w-[200px]" />
               ))}
             </div>
           </div>
