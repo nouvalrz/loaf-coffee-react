@@ -150,3 +150,26 @@ export const allMenuItems = [
     category: "beverage"
   }
 ];
+
+export const facilityItems = [
+  {
+    iconSource: "fa-wifi",
+    title: "Free Wi-fi & Electric Plugs",
+    description: "Enjoy high-speed Wi-Fi and easy access to power outlets anywhere in our coffee shop.",
+  },
+  {
+    iconSource: "fa-briefcase",
+    title: "Workspace & Meeting Room",
+    description: "A cozy space with comfortable seating, perfect for working or holding meetings.",
+  },
+  {
+    iconSource: "fa-music",
+    title: "Live Music & Open Mic Night",
+    description: "Enjoy live performances and showcase your talent in a vibrant, welcoming atmosphere.",
+  },
+  {
+    iconSource: "fa-book",
+    title: "Reading Corner & Mini Library",
+    description: "Relax with a good book in our cozy reading nook, featuring a curated selection for all.",
+  },
+];
