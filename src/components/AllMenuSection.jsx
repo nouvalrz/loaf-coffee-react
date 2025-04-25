@@ -33,6 +33,7 @@ function AllMenuSection() {
       <ToggleGroupButton
         items={["all", "food", "beverage"]}
         onValueChange={setFilterActive}
+        active={filterActive}
       />
       <div className="flex px-2 pt-6 pb-12 bg-mustard lg:px-8">
         <div

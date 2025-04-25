@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 
-function PromoMenuItem({ tag, title, promoCode, until }) {
+function PromoMenuItem({ tag, title, promoCode, until, imageSource }) {
   return (
     <div
-      className="px-2 py-4 rounded-lg lg:px-4 lg:py-6 bg-orange grow bg-[url(./assets/images/ramadan-offer.png)] bg-no-repeat bg-right-bottom bg-[auto_80%]"
+      className={`px-2 py-4 rounded-lg lg:px-4 lg:py-6 bg-orange! grow bg-no-repeat! bg-right-bottom! bg-[auto_80%]!`}
       data-aos="fade-up"
+      style={{ background: `url(${imageSource})` }}
     >
       <p className="font-[Archivo] font-medium lg:text-xl uppercase">{tag}</p>
       <p className="font-[Archivo] font-extrabold lg:text-3xl text-xl uppercase">
@@ -23,6 +24,7 @@ PromoMenuItem.propTypes = {
   title: PropTypes.string.isRequired,
   promoCode: PropTypes.string.isRequired,
   until: PropTypes.string.isRequired,
+  imageSource: PropTypes.string.isRequired,
 };
 
 export default PromoMenuItem;

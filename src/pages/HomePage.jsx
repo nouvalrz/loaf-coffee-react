@@ -18,7 +18,7 @@ function HomePage() {
             <LogoBadge />
             <PromoBannerPortrait
               title="Discover Ramadan Special"
-              backgroundUrl="../assets/images/ramadan-specials.png"
+              backgroundUrl="./assets/images/ramadan-specials.png"
               buttonTitle="Explore"
               buttonTo="/menu"
             />

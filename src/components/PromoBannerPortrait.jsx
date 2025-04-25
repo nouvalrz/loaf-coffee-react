@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 function PromoBannerPortrait({ title, backgroundUrl, buttonTitle, buttonTo }) {
   return (
     <div
-      className={`bg-mustard grow-[1] mt-8 rounded-lg p-5 bg-[url('${backgroundUrl}')] bg-[100%_auto] bg-no-repeat bg-center flex flex-col justify-between items-stretch`}
+      className={`bg-mustard! grow-[1] mt-8 rounded-lg p-5 bg-[100%_auto!] bg-no-repeat! bg-center! flex flex-col justify-between items-stretch`}
+      style={{ background: `url(${backgroundUrl})` }}
     >
       <p className="uppercase font-[Archivo] font-extrabold text-xl">{title}</p>
       <Link

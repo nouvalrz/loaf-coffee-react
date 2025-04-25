@@ -4,8 +4,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
 
-function ToggleGroupButton({ items, onValueChange }) {
-  const [active, setActive] = useState(items[0]);
+function ToggleGroupButton({ items, onValueChange, active }) {
   const containerRef = useRef(null);
   const [activeBoxStyle, setActiveBoxStyle] = useState({});
 
@@ -20,11 +19,6 @@ function ToggleGroupButton({ items, onValueChange }) {
       height: `${activeButton.offsetHeight}px`,
     });
   }, [active]);
-
-  const handleClick = (value) => {
-    setActive(value);
-    onValueChange(value);
-  };
 
   return (
     <div className="mt-4 text-center" data-aos="fade-up">
@@ -44,7 +38,7 @@ function ToggleGroupButton({ items, onValueChange }) {
             )}
             key={index}
             data-value={item}
-            onClick={() => handleClick(item)}
+            onClick={() => onValueChange(item)}
           >
             {item}
           </button>
@@ -57,6 +51,7 @@ function ToggleGroupButton({ items, onValueChange }) {
 ToggleGroupButton.propTypes = {
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
   onValueChange: PropTypes.func.isRequired,
+  active: PropTypes.string.isRequired,
 };
 
 export default ToggleGroupButton;

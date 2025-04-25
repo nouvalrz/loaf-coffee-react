@@ -76,13 +76,15 @@ export const promoMenuItems = [
     tag: "Ramadan Offer",
     title: "10% Off Discount",
     promoCode: "#IFTAAR_ON",
-    until: "31 March"
+    until: "31 March",
+    imageSource: "./assets/images/ramadan-offer.png"
   },
   {
     tag: "Seasonal Offer",
     title: "BUY 2 FREE 1 CROISSANT",
     promoCode: "#GO_FREE",
-    until: "5 April"
+    until: "5 April",
+    imageSource: "./assets/images/seasonal-offer.png"
   }
 ]
 
