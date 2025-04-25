@@ -16,7 +16,7 @@ function Navigation() {
         <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
         <Link to="/facilities">Facilities</Link>
-        <Link to="/">About Us</Link>
+        <Link to="/about-us">About Us</Link>
       </nav>
     </div>
   );
